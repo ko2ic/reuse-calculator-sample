@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="red_center">#dd004b</color>
+	<color name="red_end">#eac2d3</color>
+
+    <color name="red_push_center">#ff9cfb</color>
+    <color name="red_push_end">#ff1493</color>	
+		
+	<color name="gray_center">#3e3e3e</color>
+	<color name="gray_end">#fafafa</color>
+
+    <color name="gray_push_center">#fafafa</color>
+    <color name="gray_push_end">#3e3e3e</color>  	
+		
+	<color name="black_center">#0a0a0a</color>
+	<color name="black_end">#c0c0c0</color>
+	
+	<color name="black_push_center">#c0c0c0</color>
+	<color name="black_push_end">#0a0a0a</color>
+	
+    <color name="button_stroke">#990a0a0a</color>	
+	<color name="button_textColor">#ffffff</color>
+
+    <color name="display_normal_text">#505050</color>  	
+    <color name="drag_start">#b0e0e6</color>   	
+		
+</resources>
+

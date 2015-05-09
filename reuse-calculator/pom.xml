@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>ko2.ic.android.reuse.calc</groupId>
+    <artifactId>reuse-calculator-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>reuse-calculator</artifactId>
+  <packaging>apk</packaging>
+  <name>reuse-calculator - Application</name>
+  
+  <dependencies>
+    <dependency>
+      <groupId>com.google.android</groupId>
+      <artifactId>android</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>com.google.android</groupId>
+        <artifactId>annotations</artifactId>
+    </dependency>       
+    <dependency>
+        <groupId>com.google.ads</groupId>
+        <artifactId>GoogleAdMobAdsSdk</artifactId>
+    </dependency>      
+    
+    <dependency>
+        <groupId>com.j256.ormlite</groupId>
+        <artifactId>ormlite-android</artifactId>
+    </dependency>      
+    <dependency>
+        <groupId>org.roboguice</groupId>
+        <artifactId>roboguice</artifactId>
+    </dependency>    
+    <dependency>
+        <groupId>com.google.android.apps.analytics</groupId>
+        <artifactId>libGoogleAnalytics</artifactId>
+    </dependency>    
+    <dependency>
+      <groupId>de.akquinet.android.androlog</groupId>
+      <artifactId>androlog</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+        <artifactId>android-maven-plugin</artifactId>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

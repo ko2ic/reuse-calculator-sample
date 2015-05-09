@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F8F8F8"
+    >     
+    
+    <LinearLayout 
+        android:id="@+id/calcLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"     
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="false"	        
+        >
+	   <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <ko2.ic.android.reuse.calc.ui.component.SquareButton
+	            android:id="@+id/allclear"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:background="@drawable/button_red"
+	            android:textColor="@color/button_textColor"
+	            android:textSize="40sp"
+	            android:text="AC"/>
+
+			<RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:layout_gravity="center"
+                    android:background="@drawable/textview_display"
+			    >   	        
+	        	
+		        <TextView
+		            android:id="@+id/display"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+		            android:gravity="center_vertical|right"
+		            android:textColor="@color/display_normal_text"
+		            android:singleLine="true"
+		            android:lines="1"
+		            android:ellipsize="end"/>
+		            
+                <TextView
+                    android:id="@+id/displayOp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="top"
+                    android:textColor="#505050"
+                    android:textSize="20sp"
+                    />		            
+		        
+		        
+		    </RelativeLayout>
+	
+	        <ko2.ic.android.reuse.calc.ui.component.SquareButton
+	            android:id="@+id/clear"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:background="@drawable/button_red"
+	            android:textColor="@color/button_textColor"
+	            android:textSize="40sp"
+	            android:text="C"/>
+	    </LinearLayout>    
+        
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+	        <ko2.ic.android.reuse.calc.ui.component.SquareButton
+	            android:id="@+id/seven"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:background="@drawable/button_black"
+	            android:textColor="@color/button_textColor"
+	            android:textSize="40sp"
+	            android:text="7" />
+
+	        <ko2.ic.android.reuse.calc.ui.component.SquareButton
+	            android:id="@+id/eight"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:background="@drawable/button_black"
+	            android:textColor="@color/button_textColor"
+	            android:textSize="40sp"
+	            android:text="8" />
+
+	        <ko2.ic.android.reuse.calc.ui.component.SquareButton
+	            android:id="@+id/nine"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"            
+	            android:layout_weight="1"
+                android:background="@drawable/button_black"
+                android:textColor="@color/button_textColor"	   
+                android:textSize="40sp"
+	            android:text="9"
+	            />
+	        <ko2.ic.android.reuse.calc.ui.component.SquareButton
+	            android:id="@+id/sign"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"            
+	            android:layout_weight="1"
+                android:background="@drawable/button_gray"	
+                android:textColor="@color/button_textColor"    
+                android:textSize="40sp"
+	            android:text="+/-"
+	            />                            
+	        <ko2.ic.android.reuse.calc.ui.component.SquareButton
+	            android:id="@+id/percent"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"            
+	            android:layout_weight="1"
+                android:background="@drawable/button_gray"
+                android:textColor="@color/button_textColor"
+                android:textSize="40sp"
+	            android:text="%"
+	            />  
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	
+	        <ko2.ic.android.reuse.calc.ui.component.SquareButton
+	            android:id="@+id/four"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:background="@drawable/button_black"
+	            android:textColor="@color/button_textColor"
+	            android:textSize="40sp"
+	            android:text="4" />
+	
+	        <ko2.ic.android.reuse.calc.ui.component.SquareButton
+	            android:id="@+id/five"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"            
+	            android:layout_weight="1"
+	            android:background="@drawable/button_black"
+	            android:textColor="@color/button_textColor"
+	            android:textSize="40sp"
+	            android:text="5"
+	            />
+	        <ko2.ic.android.reuse.calc.ui.component.SquareButton
+	            android:id="@+id/six"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"            
+	            android:layout_weight="1"
+	            android:background="@drawable/button_black"
+	            android:textColor="@color/button_textColor"
+	            android:textSize="40sp"
+	            android:text="6"
+	            />
+	        <ko2.ic.android.reuse.calc.ui.component.SquareButton
+	            android:id="@+id/minus"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"            
+	            android:layout_weight="1"
+	            android:background="@drawable/button_gray"
+	            android:textColor="@color/button_textColor"
+	            android:textSize="40sp"
+	            android:text="-"
+	            />                            
+	        <ko2.ic.android.reuse.calc.ui.component.SquareButton
+	            android:id="@+id/divide"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"            
+	            android:layout_weight="1"
+	            android:background="@drawable/button_gray"
+	            android:textColor="@color/button_textColor"
+	            android:textSize="40sp"
+	            android:text="÷"
+	            />  
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"            
+	            android:orientation="vertical" >	        	
+		        <ko2.ic.android.reuse.calc.ui.component.SquareButton
+		            android:id="@+id/one"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/button_black"
+		            android:textColor="@color/button_textColor"
+		            android:textSize="40sp"
+		            android:text="1" />
+                <ko2.ic.android.reuse.calc.ui.component.SquareButton
+                    android:id="@+id/zero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_black"
+                    android:textColor="@color/button_textColor"
+                    android:textSize="40sp"
+                    android:text="0" />	
+                <ko2.ic.android.reuse.calc.ui.component.SquareButton
+                    android:id="@+id/dustbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="40sp"
+                    android:text="ゴ" 
+                    android:visibility="gone"/>                         	        
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:orientation="vertical" >        
+		        <ko2.ic.android.reuse.calc.ui.component.SquareButton
+		            android:id="@+id/two"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"   
+		            android:background="@drawable/button_black"
+		            android:textColor="@color/button_textColor"    
+		            android:textSize="40sp"
+		            android:text="2"
+		            />
+                <ko2.ic.android.reuse.calc.ui.component.SquareButton
+                    android:id="@+id/doublezero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:background="@drawable/button_black"
+                    android:textColor="@color/button_textColor" 
+                    android:textSize="40sp"
+                    android:text="00"
+                    />		        
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:orientation="vertical" >     	        
+		        <ko2.ic.android.reuse.calc.ui.component.SquareButton
+		            android:id="@+id/three"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@drawable/button_black"
+		            android:textColor="@color/button_textColor"  
+		            android:textSize="40sp" 
+		            android:text="3"
+		            />
+                <ko2.ic.android.reuse.calc.ui.component.SquareButton
+                    android:id="@+id/comma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"            
+                    android:background="@drawable/button_black"
+                    android:textColor="@color/button_textColor"
+                    android:textSize="40sp"
+                    android:text="."
+                    />
+		    </LinearLayout>
+	        <ko2.ic.android.reuse.calc.ui.component.RectangleVerticalButton
+	            android:id="@+id/plus"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"            
+	            android:layout_weight="1"
+	            android:background="@drawable/button_gray"
+	            android:textColor="@color/button_textColor"
+	            android:layout_gravity="bottom"
+	            android:textSize="40sp"
+	            android:text="+"
+	            />   
+	        <LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:orientation="vertical" >     	                                     
+		        <ko2.ic.android.reuse.calc.ui.component.SquareButton
+		            android:id="@+id/times"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"      
+		            android:background="@drawable/button_gray"
+		            android:textColor="@color/button_textColor" 
+		            android:textSize="40sp"
+		            android:text="×"
+		            />  
+                <ko2.ic.android.reuse.calc.ui.component.SquareButton
+                    android:id="@+id/equal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"      
+                    android:background="@drawable/button_gray" 
+                    android:textColor="#ffffff"
+                    android:textSize="40sp"
+                    android:text="="
+                    />  		            
+		    </LinearLayout>
+        </LinearLayout>  
+    </LinearLayout>           
+
+    <RelativeLayout 
+         android:id="@+id/reuseGroupArea"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" 
+         android:layout_alignParentTop="true">
+        
+    </RelativeLayout>      
+
+</RelativeLayout>
